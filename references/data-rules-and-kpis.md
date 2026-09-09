@@ -17,18 +17,77 @@
 
 
 ## 🔢 Regras Gerais de Cálculo
-<!--
+
 - **Base de Cálculo (`total_predios`)**:
   - Variável que armazena a contagem total de prédios na base filtrada.
 - **Fórmula do Percentual**:
   $$\text{Percentual} = \left(\frac{\text{Quantidade}}{\text{total\_predios}}\right) \times 100$$
--->
+
   - Todos os percentuais devem ser calculados dinamicamente e arredondados para **2 casas decimais**.
   - Proibido hardcoding ou valores fixados manualmente.
   - Desconsidere dos cálculos das abas (Exceto a aba "Detalhamento AVCB Descontinuado"), todos os prédios com coluna AVCB_IA[AVCB] == "Descontinuado"
   - Os cálculos da aba "Detalhamento AVCB Descontinuado", deve considerar todos os prédios com coluna AVCB_IA[AVCB] == "Descontinuado"
 
-### Aba 09-Adequações
+### Aba 01-AVCB
+
+- Utilize ícones que estejam de acordo com o contexto do painel, da aba da planilha e com o item do respectivo card. Ícone no canto extremo esquerdo do card.
+
+total_predios = distinctcount(AVCB_IA[Prédio])
+
+total_predios_pendentes = prédios em que AVCB_IA[Status AVCB] == "Pendente"
+
+total_predios_descontinuados = prédios em que AVCB_IA[AVCB] == "Descontinuados"
+
+total_predios_ativos = total_predios - total_predios_descontinuados
+
+
+#### **Total de Prédios**: Contagem de registros  `total_predios`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor  #FFD919
+
+
+#### **AVCBs Válidos**: Contagem de registros válidos na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor  #FFD919
+
+#### **AVCBs Vencidos**: Contagem de registros do tipo "Vencido" na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card:  fa-exclamation-circle na cor  #FFD919
+
+#### **Status do Projeto PPCI Concluído**: Contagem de registros "Concluído" na coluna `Status do Projeto PPCI` + % sobre `total_predios_ativos`.Ícone no canto extremo esquerdo do card: fa-file-signature na cor  #FFD919
+
+#### **Status PPCI Aprovado**: Contagem de registros "Aprovado" na coluna `Status PPCI` + % sobre `total_predios_ativos`.Ícone no canto extremo esquerdo do card: fa-file-signature na cor  #FFD919
+
+### Aba 02-Prevenção-a-Incêndio
+
+####  Card **Total Prédios**: Contagem de registros  `total_predios`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor #FFD919
+
+####  Card **Brigada**: Contagem de registros "12 Horas", "24 Horas", "12H - noturno", "12H - diurno" na coluna `Brigada Civil V.tal 2026` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: user-shield na cor #FFD919
+
+#### **SDAI válido**: Contagem de registros "SIM" na coluna `SDAI` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: alarm-smoke  na cor  #FFD919
+
+#### **SDAI/SDACI sem falhas**: Contagem de registros "SIM" na coluna `Operacional sem falhas` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-check-circle na cor  #FFD919
+
+#### **SDAI/SDACI com falhas**: Contagem de registros "Operacional com falhas - Alto", "Inoperante",
+"Operacional com falhas - Médio", "Operacional com falhas - Baixo",
+"Operacional com falhas - Muito alto" na coluna `SDAI/SDACI operante` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-exclamation-circle na cor  #FFD919
+
+#### **FM200 válido**: Contagem de registros do tipo "SIM" na coluna `FM200` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: cylinder na cor  #FFD919
+
+#### **Extintor presente**: Contagem de registros "SIM" na coluna `Extintor` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fire-extinguisher na cor  #FFD919
+
+### Aba 03-Laudos
+
+####  Card **Total Prédios**: Contagem de registros  `total_predios`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor #FFD919
+
+####  Card **Total de Laudos Pendentes**: Contagem de registros  `total_laudos_pendentes`. Ícone no canto extremo esquerdo do card: fa-exclamation-circle  na cor #FFD919
+
+#### **ART Elétrica Pendentes**: Faça uma contagem de registros 'SIM' na coluna 'ART ELÉTRICA' (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre `total_predios`. Ícone no canto extremo esquerdo do Card: zap, na cor  #FFD919	
+
+#### **ART SPDA Pendentes**: Contagem de registros 'SIM' na coluna `ART SPDA` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-bolt na cor  #FFD919	 
+
+#### **ART GMG Pendentes**: Contagem de registros 'SIM' na coluna `ART GMG` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre`total_predios`. Ícone no canto extremo esquerdo do Card: fa-charging-station  na cor  #FFD919
+
+#### **ART Tanques Pendentes**: Contagem de registros 'SIM' na coluna  `ART TANQUES` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobresobre `total_predios`.	Ícone no canto extremo esquerdo do Card: cylinder, na cor  #FFD919
+
+### Aba 04-Adequações
+
+####  Card **Total Prédios**: Contagem de registros  `total_predios`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor #FFD919
+
 ####  Card Sistemas de Combate a Incêndio : 
 Implemente o cálculo do indicador de **Percentual de AVCB Válidos** considerando as seguintes especificações:
 

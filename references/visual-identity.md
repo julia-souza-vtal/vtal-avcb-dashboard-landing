@@ -37,7 +37,7 @@
 ## 📊 Regras dos Rótulos nos Gráficos
 - **Valores e Percentuais**: Exibir valores absolutos e % diretamente em cada barra. Os valores devem estar visíveis no espaço delimitado para o gráfico. Mantenha espaçamento de 5 px em cada borda.
 - **Tooltips**: NÃO utilizar tooltips como forma de visualização das informações.
-- **Fonte do Eixo/Rótulos**: Tamanho `9px`. <!-- Se o texto não couber no espaço delimitado, realizar quebra de linha em 2 linhas.-->
+- **Fonte do Eixo/Rótulos**: <!-- Tamanho `9px`. --> Se o texto não couber no espaço delimitado, realizar quebra de linha em 2 linhas ou 3 linhas, desde que esteja alinhado com a sua respectiva barra.
 
 # Regras nos Gráficos
 
@@ -53,7 +53,7 @@
 
 3. **Padrão Visual SaaS (V.tal / UI Moderna):**
    - Paleta de cores limpa: fundo `#F4F5F9`, cartões em `#FFFFFF`, amarelo corporativo (`#FFD919`) para as barras horizontais.
-   - Tipografia limpa, sem elementos poluidos, sem gráficos de pizza ou rosca (utilize estritamente barras horizontais com rótulos de valor absoluto e percentual quando aplicável).
+   - Tipografia limpa, sem elementos poluídos, sem gráficos de pizza ou rosca (utilize estritamente barras horizontais com rótulos de valor absoluto e percentual quando aplicável).
    - Código limpo, componentizado e responsivo.
 
 <!-- 

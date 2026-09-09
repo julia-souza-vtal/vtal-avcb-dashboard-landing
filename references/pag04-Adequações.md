@@ -10,13 +10,18 @@
   - Posicionados na parte superior da página, abaixo do cabeçalho
   - OBRIGATÓRIO USAR Filtros com Padrão flutuante/horizontal recolhível com suporte a múltipla seleção e opção "Selecionar Todos"
   - OBRIGATÓRIO USAR Filtro [UF] e filtro [Município] com relacionamento em cascata (ao selecionar UF, exibe apenas os municípios correspondentes, seguindo o arquivo "municipios-incendio.csv")
-  - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#000000), texto em branco(#FAFAFA), para destaque 
+   - As seções 'Adequações', 'Detalhamento Adequações', devem estar uma abaixo da outra, em sequência. Sem botões para intercambiar as seções.
+  <-- - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#000000), texto em branco(#FAFAFA), para destaque -->
 
 
 - filtros na parte superior, conforme a seguinte ordem: Regional | UF | Município | Tipo | Responsável Legal | Prioridade
 
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
+
+- **Total de Prédios*: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+
+- **Total de Adequações*: Contagem de registros `total_adequações`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
 - **Adequações Pendentes de Sistemas de Combate a Incêndio**: Contagem de registros pendentes nas colunas: "Bomba de Incêndio", "Extintor + suportes", "Hidrantes" - E a % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 

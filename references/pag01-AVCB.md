@@ -5,7 +5,9 @@
 
 - Mantenha o cabeçalho, filtros, Cards e cabeçalho da tabela sempre visivel, independente do estado da barra de rolagem
 
-- Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#000000), texto em branco(#FAFAFA), para destaque 
+<!-- - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#000000), texto em branco(#FAFAFA), para destaque -->
+
+- As seções 'AVCB', 'Detalhamento AVCB', 'Detalhamento AVCB Descontinuado' devem estar uma abaixo da outra, em sequência. Sem botões para intercambiar as seções.
 
 ## **Filtros do Cabeçalho**:
   - Siga estritamente a ordem dos Filtros: Regional, UF, Município, Tipo de Prédio, Resp. Legal, Prioridade, Status do projeto PPCI
@@ -13,7 +15,7 @@
   - OBRIGATÓRIO USAR Filtros com Padrão flutuante/horizontal recolhível com suporte a múltipla seleção e opção "Selecionar Todos"
   - OBRIGATÓRIO USAR Filtro [UF] e filtro [Município] com relacionamento em cascata (ao selecionar UF, exibe apenas os municípios correspondentes, seguindo o arquivo "municipios-incendio.csv")
   - Considere APENAS o total de prédios em que AVCB_IA[Status AVCB] == "Pendente"
-  - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em cinza (#C2C6D6), texto em branco(#FAFAFA), para destaque.
+  <!-- - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#C2C6D6), texto em branco(#FAFAFA), para destaque. -->
 
 ## texto de observação acima dos cards
 
