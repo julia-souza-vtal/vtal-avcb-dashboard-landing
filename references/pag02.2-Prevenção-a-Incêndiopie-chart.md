@@ -18,7 +18,7 @@ A partir dos dados da aba "DIVERSOS" da planilha em anexo, crie:
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
  
- - **Total de Prédios*: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+ - **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
 1. **Brigada**: Contagem de registros "12 Horas", "24 Horas", "12H - noturno", "12H - diurno" na coluna `Brigada Civil V.tal 2026` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: user-shield na cor  #FFD919
 
@@ -54,8 +54,8 @@ Formatados como `XX (XX,XX%)`:
    - Para barras horizontais, posicione o valor numérico de forma clara (preferencialmente ao lado ou dentro da barra, com contraste adequado) e garanta que o eixo X/escala de valores possua margem de respiro superior (`max` do eixo calculado com margem de segurança de ~10% acima do maior valor).
 
 3. **Padrão Visual SaaS (V.tal / UI Moderna):**
-   - Paleta de cores limpa: fundo `#F4F5F9`, cartões em `#FFFFFF`, amarelo corporativo (`#FFD919`) para as barras horizontais.
-   - Tipografia limpa, sem elementos poluidos, sem gráficos de pizza ou rosca (utilize estritamente barras horizontais com rótulos de valor absoluto e percentual quando aplicável).
+   - Paleta de cores limpa: fundo #F4F5F9, cartões em #FFFFFF, cor principal: amarelo corporativo (#FFD919), cor secundária1: CINZA ESCURO 1 #514F66, cor secundária2: CINZA MÉDIO #C2C6D6, cor secundária3 CINZA ESCURO 2: #2E2D39, cor secundária4 AMARELO ESCURO ('#694A00')
+   - Tipografia limpa, sem elementos poluidos
    - Código limpo, componentizado e responsivo.
 
 1. **Brigada Civil**:

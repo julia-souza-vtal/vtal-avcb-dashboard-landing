@@ -34,7 +34,7 @@ total_predios_descontinuados = prédios em que AVCB_IA[AVCB] == "Descontinuados"
 
 total_predios_ativos = total_predios - total_predios_descontinuados
 
-- **Total de Prédios*: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+- **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
 1. **AVCBs Válidos**: Contagem de registros válidos na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor  #FFD919
 2. **AVCBs Vencidos**: Contagem de registros do tipo "Vencido" na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card:  fa-exclamation-circle na cor  #FFD919
@@ -57,10 +57,11 @@ total_predios_ativos = total_predios - total_predios_descontinuados
 2. **Rótulos e Eixos Sempre Visíveis:**
    - Todos os rótulos (nomes das categorias) e os valores numéricos das barras (labels) DEVEM aparecer permanentemente legíveis, sem cortes, sobreposições ou truncamentos em qualquer largura de tela (mobile e desktop).
    - Para barras horizontais, posicione o valor numérico de forma clara (preferencialmente ao lado ou dentro da barra, com contraste adequado) e garanta que o eixo X/escala de valores possua margem de respiro superior (`max` do eixo calculado com margem de segurança de ~10% acima do maior valor).
+   - garanta que o eixo Y/escala de valores possua margem de respiro superior (`max` do eixo calculado com margem de segurança de ~10% acima do maior valor)
 
 3. **Padrão Visual SaaS (V.tal / UI Moderna):**
-   - Paleta de cores limpa: fundo `#F4F5F9`, cartões em `#FFFFFF`, amarelo corporativo (`#FFD919`) para as barras horizontais.
-   - Tipografia limpa, sem elementos poluidos, sem gráficos de pizza ou rosca (utilize estritamente barras horizontais com rótulos de valor absoluto e percentual quando aplicável).
+   - Paleta de cores limpa: fundo #F4F5F9, cartões em #FFFFFF, cor principal: amarelo corporativo (#FFD919), cor secundária1: CINZA ESCURO 1 #514F66, cor secundária2: CINZA MÉDIO #C2C6D6, cor secundária3 CINZA ESCURO 2: #2E2D39, cor secundária4 AMARELO ESCURO ('#694A00')
+   - Tipografia limpa, sem elementos poluidos
    - Código limpo, componentizado e responsivo.
 
 ### Bloco AVCB (3 Gráficos Lado a Lado)
@@ -68,20 +69,20 @@ total_predios_ativos = total_predios - total_predios_descontinuados
 - OBRIGATÓRIO Excluir de todos os gráficos desta seção os registros em que AVCB_IA[Status AVCB] == "Descontinuado"
 
 1. **AVCB**:
-   - Gráfico de barras horizontal, com valor absoluto e o percentual.
+   - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
    - Itens:  Projetos Vencidos, Protocolos Válidos. NÃO conter itens AVCB_IA[Status AVCB] == "Descontinuado"
-   - Ordenação em ordem **decrescente**.
+   <!-- - Ordenação em ordem **decrescente**.
 2. **Status AVCB**:
-   - Gráfico de barras horizontal, com valor absoluto e o percentual.
+   - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
    - Itens: Pendente, Válido, Aguardando vistoria do CBM, Aguardando emissão de AVCB, Vistoria comunicada. NÃO conter itens AVCB_IA[Status AVCB] == "Descontinuado"
-   - Ordenação em ordem **decrescente**.
+   <!-- - Ordenação em ordem **decrescente**.
 3. **Detalhes dos Prédios com AVCB Pendente**:
-   - Gráfico de barras horizontal, com valor absoluto e o percentual.
+   - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
    - Tratamento de Dados: Tratar células em branco, null, NaN, undefined ou "0" como a categoria "Sem detalhamento"
    - Considere APENAS o total de prédios em que AVCB_IA[Status AVCB] == "Pendente"
    - Itens: Aguardando conclusão de PPCI, Coletando Documentos, Aguardando Adequação, Sem detalhamento (células em branco, nan ou "0" devem ser consideradas "Sem Detalhamento").
    - Os itens "Sem detalhamento" devem ser mostrados apenas para os casos em que AVCB_IA[Status AVCB] == "Pendente".
-   - Ordenação em ordem **decrescente**.
+   <!-- - Ordenação em ordem **decrescente**.
 
 ### Bloco PPCI (2 Gráficos Lado a Lado)
  
