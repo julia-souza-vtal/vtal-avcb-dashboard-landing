@@ -19,17 +19,17 @@
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
 
-- **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+1. **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
-- **Total de Laudos Pendentes**: Contagem de registros `total_laudos_pendentes`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+2. **Total de Laudos Pendentes**: Contagem de registros `total_laudos_pendentes`. Ícone no canto extremo esquerdo do card na cor  #FFD919
  
-1. **ART ELÉTRICA Pendentes**: Faça uma contagem de registros 'SIM' na coluna 'ART ELÉTRICA' (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre `total_predios`. Ícone no canto extremo esquerdo do Card: zap, na cor  #FFD919	
+3. **ART ELÉTRICA Pendentes**: Faça uma contagem de registros 'SIM' na coluna 'ART ELÉTRICA' (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre `total_predios`. Ícone no canto extremo esquerdo do Card: zap, na cor  #FFD919	
 
-2. **ART SPDA Pendentes**: Contagem de registros 'SIM' na coluna `ART SPDA` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-bolt na cor  #FFD919	 
+4. **ART SPDA Pendentes**: Contagem de registros 'SIM' na coluna `ART SPDA` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-bolt na cor  #FFD919	 
 
-3. **ART GMG Pendentes**: Contagem de registros 'SIM' na coluna `ART GMG` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre`total_predios`. Ícone no canto extremo esquerdo do Card: fa-charging-station  na cor  #FFD919
+5. **ART GMG Pendentes**: Contagem de registros 'SIM' na coluna `ART GMG` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre`total_predios`. Ícone no canto extremo esquerdo do Card: fa-charging-station  na cor  #FFD919
 
-4. **ART TANQUES Pendentes**: Contagem de registros 'SIM' na coluna  `ART TANQUES` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobresobre `total_predios`.	Ícone no canto extremo esquerdo do Card: cylinder, na cor  #FFD919
+6. **ART TANQUES Pendentes**: Contagem de registros 'SIM' na coluna  `ART TANQUES` (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobresobre `total_predios`.	Ícone no canto extremo esquerdo do Card: cylinder, na cor  #FFD919
 
 
 ## 1ª Sessão ("Laudos")

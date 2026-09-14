@@ -34,12 +34,12 @@ total_predios_descontinuados = prédios em que AVCB_IA[AVCB] == "Descontinuados"
 
 total_predios_ativos = total_predios - total_predios_descontinuados
 
-- **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
-
-1. **AVCBs Válidos**: Contagem de registros válidos na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor  #FFD919
-2. **AVCBs Vencidos**: Contagem de registros do tipo "Vencido" na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card:  fa-exclamation-circle na cor  #FFD919
-3. **Status do Projeto PPCI Concluído**: Contagem de registros "Concluído" na coluna `Status do Projeto PPCI` + % sobre `total_predios_ativos`.Ícone no canto extremo esquerdo do card: fa-file-signature na cor  #FFD919
-4. **Status PPCI Aprovado**: Contagem de registros "Aprovado" na coluna `Status PPCI` + % sobre `total_predios_ativos`.Ícone no canto extremo esquerdo do card: fa-file-signature na cor  #FFD919
+1. **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+2. **Prédios Descontinuados**:  Contagem de registros `total_predios_descontinuados`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+3. **AVCBs Válidos**: Contagem de registros válidos na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card: fa-check-circle  na cor  #FFD919
+4. **AVCBs Vencidos**: Contagem de registros do tipo "Vencido" na coluna `AVCB` + % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card:  fa-exclamation-circle na cor  #FFD919
+5. **Status do Projeto PPCI Concluído**: Contagem de registros "Concluído" na coluna `Status do Projeto PPCI` + % sobre `total_predios_ativos`.Ícone no canto extremo esquerdo do card: fa-file-signature na cor  #FFD919
+6. **Status PPCI Aprovado**: Contagem de registros "Aprovado" na coluna `Status PPCI` + % sobre `total_predios_ativos`.Ícone no canto extremo esquerdo do card: fa-file-signature na cor  #FFD919
 
 
 ## 📈 Gráficos da 1ª Seção ("AVCB")
@@ -108,6 +108,7 @@ De acordo com o tutorial do link https://webdesign.tutsplus.com/how-to-create-a-
 - **Campo de Busca**: Campo de pesquisa por texto aberto pelo nome do prédio no canto superior direito da área da tabela.
 - **Aparência**: Tabela com rolagem interna, sem paginação e sem textos na parte superior além do título e campo de busca.
 
+<!--
 ## 📋 3ª Seção ("Detalhamento AVCB Descontinuado")
 
 ### Título da Seção: Prédios com AVCB Descontinuado
@@ -120,3 +121,4 @@ De acordo com o tutorial do link https://webdesign.tutsplus.com/how-to-create-a-
 - **Busca de Texto Aberto**: Filtro pelo nome do prédio.
 - **Campo de Busca**: Campo de pesquisa por texto aberto pelo nome do prédio no canto superior direito da área da tabela.
 - **Aparência**: Tabela com rolagem interna, sem paginação e sem textos na parte superior além do título e campo de busca.
+-->

@@ -18,22 +18,22 @@ A partir dos dados da aba "DIVERSOS" da planilha em anexo, crie:
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
  
- - **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+1. **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
-1. **Brigada**: Contagem de registros "12 Horas", "24 Horas", "12H - noturno", "12H - diurno" na coluna `Brigada Civil V.tal 2026` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: user-shield na cor  #FFD919
+2. **Brigada**: Contagem de registros "12 Horas", "24 Horas", "12H - noturno", "12H - diurno" na coluna `Brigada Civil V.tal 2026` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: user-shield na cor  #FFD919
 
-2. **SDAI válido**: Contagem de registros "SIM" na coluna `SDAI` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: alarm-smoke  na cor  #FFD919
+3. **SDAI válido**: Contagem de registros "SIM" na coluna `SDAI` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: alarm-smoke  na cor  #FFD919
 
-3. **SDAI/SDACI sem falhas**: Contagem de registros "SIM" na coluna `Operacional sem falhas` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-check-circle na cor  #FFD919
+4. **SDAI/SDACI sem falhas**: Contagem de registros "SIM" na coluna `Operacional sem falhas` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-check-circle na cor  #FFD919
 
-4. **SDAI/SDACI com falhas**: Contagem de registros "Operacional com falhas - Alto", "Inoperante",
+5. **SDAI/SDACI com falhas**: Contagem de registros "Operacional com falhas - Alto", "Inoperante",
 "Operacional com falhas - Médio", "Operacional com falhas - Baixo",
 "Operacional com falhas - Muito alto" na coluna `SDAI/SDACI operante` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fa-exclamation-circle na cor  #FFD919
 
 
-5. **FM200 válido**: Contagem de registros do tipo "SIM" na coluna `FM200` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: cylinder na cor  #FFD919
+6. **FM200 válido**: Contagem de registros do tipo "SIM" na coluna `FM200` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: cylinder na cor  #FFD919
 
-6. **Extintor presente**: Contagem de registros "SIM" na coluna `Extintor` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fire-extinguisher na cor  #FFD919
+7. **Extintor presente**: Contagem de registros "SIM" na coluna `Extintor` + % sobre `total_predios`. Ícone no canto extremo esquerdo do Card: fire-extinguisher na cor  #FFD919
 
 ## 📋 1ª Seção ("Prevenção a Incêndio (PI)")
 ### Gráficos
