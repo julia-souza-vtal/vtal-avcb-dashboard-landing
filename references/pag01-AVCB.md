@@ -19,7 +19,8 @@
 
 ## texto de observação acima dos cards
 
-- alinhado à direita, fonte de texto escreva: "Essa aba do painel não considera os prédios com AVCB descontinuado" 
+<!-- - alinhado à direita, fonte de texto escreva: "Essa aba do painel não considera os prédios com AVCB descontinuado" -->
+-  alinhado à direita, fonte de texto escreva: "Atualizado em: " + data de envio da última planilha, seguindo o formato DD/MM/AAAA
 
 ## 🎴 Cards / KPIs Globais para as abas "AVCB" e "Detalhamento AVCB"
 Formatados como `XX (XX,XX%)`:

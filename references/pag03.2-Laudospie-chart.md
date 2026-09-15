@@ -16,6 +16,11 @@
 - Aba a partir dos dados da aba "Laudos" da planilha "Big Numbers AVCB - planilha IA.xlsx"
 - filtros na parte superior, conforme a seguinte ordem: Regional | UF | Município | Tipo | Responsável Legal | Prioridade
 
+## texto de observação acima dos cards
+
+<!-- - alinhado à direita, fonte de texto escreva: "Essa aba do painel não considera os prédios com AVCB descontinuado" -->
+-  alinhado à direita, fonte de texto escreva: "Atualizado em: " + data de envio da última planilha, seguindo o formato DD/MM/AAAA
+
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
 

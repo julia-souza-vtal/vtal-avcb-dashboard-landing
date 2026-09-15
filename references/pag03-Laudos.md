@@ -16,12 +16,18 @@
 - Aba a partir dos dados da aba "Laudos" da planilha "Big Numbers AVCB - planilha IA.xlsx"
 - filtros na parte superior, conforme a seguinte ordem: Regional | UF | Município | Tipo | Responsável Legal | Prioridade
 
+## texto de observação acima dos cards
+
+<!-- - alinhado à direita, fonte de texto escreva: "Essa aba do painel não considera os prédios com AVCB descontinuado" -->
+-  alinhado à direita, fonte de texto escreva: "Atualizado em: " + data de envio da última planilha, seguindo o formato DD/MM/AAAA
+
+
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
 
-- **Total de Prédios*: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+- **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
-- **Total de Laudos Pendentes*: Contagem de registros `total_laudos_pendentes`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+- **Total de Laudos Pendentes**: Contagem de registros `total_laudos_pendentes`. Ícone no canto extremo esquerdo do card na cor  #FFD919
  
 1. **ART ELÉTRICA Pendentes**: Faça uma contagem de registros 'SIM' na coluna 'ART ELÉTRICA' (no estilo da função INDICE-CORRESP do excel, buscando o valor SIM) E a porcentagem sobre `total_predios`. Ícone no canto extremo esquerdo do Card: zap, na cor  #FFD919	
 

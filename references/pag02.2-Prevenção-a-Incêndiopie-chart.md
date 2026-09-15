@@ -13,6 +13,11 @@
   - As seções 'Prevenção a Incêndio', 'Detalhamento PI', devem estar uma abaixo da outra, em sequência. Sem botões para intercambiar as seções.
   <!-- - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#000000), texto em branco(#FAFAFA), para destaque -->
 
+## texto de observação acima dos cards
+
+<!-- - alinhado à direita, fonte de texto escreva: "Essa aba do painel não considera os prédios com AVCB descontinuado" -->
+-  alinhado à direita, fonte de texto escreva: "Atualizado em: " + data de envio da última planilha, seguindo o formato DD/MM/AAAA
+
 A partir dos dados da aba "DIVERSOS" da planilha em anexo, crie:
 
 ### 🎴 Cards / KPIs Globais

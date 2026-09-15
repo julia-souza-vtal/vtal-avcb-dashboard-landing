@@ -19,7 +19,8 @@
 
 ## texto de observação acima dos cards
 
-- alinhado à direita, fonte de texto escreva: "Essa aba do painel não considera os prédios com AVCB descontinuado" 
+<!-- - alinhado à direita, fonte de texto escreva: "Essa aba do painel não considera os prédios com AVCB descontinuado" -->
+-  alinhado à direita, fonte de texto escreva: "Atualizado em: " + data de envio da última planilha, seguindo o formato DD/MM/AAAA
 
 ## 🎴 Cards / KPIs Globais para as abas "AVCB" e "Detalhamento AVCB"
 Formatados como `XX (XX,XX%)`:
@@ -61,7 +62,7 @@ total_predios_ativos = total_predios - total_predios_descontinuados
    - garanta que o eixo Y/escala de valores possua margem de respiro superior (`max` do eixo calculado com margem de segurança de ~10% acima do maior valor)
 
 3. **Padrão Visual SaaS (V.tal / UI Moderna):**
-   - Paleta de cores limpa: fundo #F4F5F9, cartões em #FFFFFF, cor principal: amarelo corporativo (#FFD919), cor secundária1: CINZA ESCURO 1 #514F66, cor secundária2: CINZA MÉDIO #C2C6D6, cor secundária3 CINZA ESCURO 2: #2E2D39, cor secundária4 AMARELO ESCURO ('#694A00')
+   - Paleta de cores limpa: fundo #F4F5F9, cartões em #FFFFFF, cor principal: amarelo corporativo (#FFD919), cor secundária1: CINZA ESCURO 1 #514F66, cor secundária2: CINZA MÉDIO #C2C6D6, cor secundária3 AMARELO ESCURO ('#694A00'), cor secundária4 CINZA ESCURO 2: #2E2D39, 
    - Tipografia limpa, sem elementos poluidos
    - Código limpo, componentizado e responsivo.
 
@@ -72,11 +73,15 @@ total_predios_ativos = total_predios - total_predios_descontinuados
 1. **AVCB**:
    - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
    - Itens:  Projetos Vencidos, Protocolos Válidos. NÃO conter itens AVCB_IA[Status AVCB] == "Descontinuado"
-   - Os rótulos do gráfico devem permanecer fora da área 
+   - Os rótulos do gráfico devem permanecer por fora, beirando a margem da área circular.
+   - Legenda: tamanho da fonte da legenda: 10.
+
    <!-- - Ordenação em ordem **decrescente**.
 2. **Status AVCB**:
    - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
    - Itens: Pendente, Válido, Aguardando vistoria do CBM, Aguardando emissão de AVCB, Vistoria comunicada. NÃO conter itens AVCB_IA[Status AVCB] == "Descontinuado"
+   - Os rótulos do gráfico devem permanecer por fora, beirando a margem da área circular.
+   - Legenda: tamanho da fonte da legenda: 10.
    <!-- - Ordenação em ordem **decrescente**.
 3. **Detalhes dos Prédios com AVCB Pendente**:
    - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
@@ -84,6 +89,8 @@ total_predios_ativos = total_predios - total_predios_descontinuados
    - Considere APENAS o total de prédios em que AVCB_IA[Status AVCB] == "Pendente"
    - Itens: Aguardando conclusão de PPCI, Coletando Documentos, Aguardando Adequação, Sem detalhamento (células em branco, nan ou "0" devem ser consideradas "Sem Detalhamento").
    - Os itens "Sem detalhamento" devem ser mostrados apenas para os casos em que AVCB_IA[Status AVCB] == "Pendente".
+   - Os rótulos do gráfico devem permanecer por fora, beirando a margem da área circular.
+   - Legenda: tamanho da fonte da legenda: 10.
    <!-- - Ordenação em ordem **decrescente**.
 
 ### Bloco PPCI (2 Gráficos Lado a Lado)
