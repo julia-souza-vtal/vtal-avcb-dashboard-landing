@@ -15,6 +15,7 @@
   - OBRIGATÓRIO USAR Filtros com Padrão flutuante/horizontal recolhível com suporte a múltipla seleção e opção "Selecionar Todos"
   - OBRIGATÓRIO USAR Filtro [UF] e filtro [Município] com relacionamento em cascata (ao selecionar UF, exibe apenas os municípios correspondentes, seguindo o arquivo "municipios-incendio.csv")
   - Considere APENAS o total de prédios em que AVCB_IA[Status AVCB] == "Pendente"
+  - NÃO colocar o total de prédios na mesma linha dos filtros
   <!-- - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#C2C6D6), texto em branco(#FAFAFA), para destaque. -->
 
 ## texto de observação acima dos cards

@@ -15,6 +15,7 @@
   - OBRIGATÓRIO USAR Filtros com Padrão flutuante/horizontal recolhível com suporte a múltipla seleção e opção "Selecionar Todos"
   - OBRIGATÓRIO USAR Filtro [UF] e filtro [Município] com relacionamento em cascata (ao selecionar UF, exibe apenas os municípios correspondentes, seguindo o arquivo "municipios-incendio.csv")
   - Considere APENAS o total de prédios em que AVCB_IA[Status AVCB] == "Pendente"
+  - NÃO colocar o total de prédios na mesma linha dos filtros
   <!-- - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#C2C6D6), texto em branco(#FAFAFA), para destaque. -->
 
 ## texto de observação acima dos cards
@@ -71,20 +72,22 @@ total_predios_ativos = total_predios - total_predios_descontinuados
 - OBRIGATÓRIO Excluir de todos os gráficos desta seção os registros em que AVCB_IA[Status AVCB] == "Descontinuado"
 
 1. **AVCB**:
-   - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
+   - Gráfico pie chart (pizza), com valor absoluto e o percentual. 
+   - Os rótulos de dados são externos, precisam estar visíveis nos gráficos, beirando a margem da área circular.
    - Itens:  Projetos Vencidos, Protocolos Válidos. NÃO conter itens AVCB_IA[Status AVCB] == "Descontinuado"
-   - Os rótulos do gráfico devem permanecer por fora, beirando a margem da área circular.
    - Legenda: tamanho da fonte da legenda: 10.
 
    <!-- - Ordenação em ordem **decrescente**.
 2. **Status AVCB**:
-   - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
+   - Gráfico pie chart (pizza), com valor absoluto e o percentual. 
+   - Os rótulos de dados são externos, precisam estar visíveis nos gráficos, beirando a margem da área circular.
    - Itens: Pendente, Válido, Aguardando vistoria do CBM, Aguardando emissão de AVCB, Vistoria comunicada. NÃO conter itens AVCB_IA[Status AVCB] == "Descontinuado"
-   - Os rótulos do gráfico devem permanecer por fora, beirando a margem da área circular.
+
    - Legenda: tamanho da fonte da legenda: 10.
    <!-- - Ordenação em ordem **decrescente**.
 3. **Detalhes dos Prédios com AVCB Pendente**:
-   - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
+   - Gráfico pie chart (pizza), com valor absoluto e o percentual. 
+   - Os rótulos de dados são externos, precisam estar visíveis nos gráficos, beirando a margem da área circular.
    - Tratamento de Dados: Tratar células em branco, null, NaN, undefined ou "0" como a categoria "Sem detalhamento"
    - Considere APENAS o total de prédios em que AVCB_IA[Status AVCB] == "Pendente"
    - Itens: Aguardando conclusão de PPCI, Coletando Documentos, Aguardando Adequação, Sem detalhamento (células em branco, nan ou "0" devem ser consideradas "Sem Detalhamento").

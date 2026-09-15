@@ -11,6 +11,7 @@
   - OBRIGATÓRIO USAR Filtros com Padrão flutuante/horizontal recolhível com suporte a múltipla seleção e opção "Selecionar Todos"
   - OBRIGATÓRIO USAR Filtro [UF] e filtro [Município] com relacionamento em cascata (ao selecionar UF, exibe apenas os municípios correspondentes, seguindo o arquivo "municipios-incendio.csv")
    - As seções 'Laudos', 'Detalhamento Laudos', devem estar uma abaixo da outra, em sequência. Sem botões para intercambiar as seções.
+  - NÃO colocar o total de prédios na mesma linha dos filtros
   <!-- - Colocar o total de prédios dessa página na mesma linha dos filtros, no lado extremo esquerdo, com borda elíptica e fundo em preto (#000000), texto em branco(#FAFAFA), para destaque -->
 
 - Aba a partir dos dados da aba "Laudos" da planilha "Big Numbers AVCB - planilha IA.xlsx"
