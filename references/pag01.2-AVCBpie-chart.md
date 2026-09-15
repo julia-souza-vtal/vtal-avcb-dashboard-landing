@@ -24,7 +24,7 @@
 ## 🎴 Cards / KPIs Globais para as abas "AVCB" e "Detalhamento AVCB"
 Formatados como `XX (XX,XX%)`:
 
-- Utilize ícones que estejam de acordo com o contexto do painel, da aba da planilha e com o item do respectivo card. Ícone no canto extremo esquerdo do card.
+- Utilize ícones que estejam de acordo com o contexto do painel, da aba da planilha e com o item do respectivo card. Ícone no canto extremo esquerdo do card. Posicione os cards em 2 linhas (ex: 4 cards na 1ª linha e 3 cards na 2ª linha)
 
 total_predios = distinctcount(AVCB_IA[Prédio])
 
@@ -44,9 +44,10 @@ total_predios_ativos = total_predios - total_predios_descontinuados
 
 ## 📈 Gráficos da 1ª Seção ("AVCB")
 
-- **Valores e Percentuais**: Exibir valores absolutos e % diretamente em cada barra.
+- **Valores e Percentuais**: Exibir valores absolutos e % diretamente em cada barra. Tamanho da fonte: 
 - **Tooltips**: NÃO utilizar tooltips como forma de visualização das informações.
-- **Eixos**: Não deixe os valores numéricos nos eixos X dos gráficos. Mantenha valores numéricos nos eixos Y dos gráficos
+- **Eixos**: Não deixe os valores numéricos nos eixos X dos gráficos. Mantenha valores numéricos nos eixos Y dos gráficos. Tamanho da fonte: 13.
+
 
 - componente responsivo em HTML, CSS moderno e opcionalmente SVG ou Flexbox/CSS Grid puro (sem dependências externas pesadas tipo Chart.js, a menos que necessário), seguindo rigorosamente estas diretrizes técnicas e visuais: 
 
@@ -71,6 +72,7 @@ total_predios_ativos = total_predios - total_predios_descontinuados
 1. **AVCB**:
    - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.
    - Itens:  Projetos Vencidos, Protocolos Válidos. NÃO conter itens AVCB_IA[Status AVCB] == "Descontinuado"
+   - Os rótulos do gráfico devem permanecer fora da área 
    <!-- - Ordenação em ordem **decrescente**.
 2. **Status AVCB**:
    - Gráfico pie chart (pizza), com valor absoluto e o percentual. Os rótulos de dados precisam estar visíveis nos gráficos.

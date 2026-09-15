@@ -19,9 +19,9 @@
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
 
-- **Total de Prédios*: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+- **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
-- **Total de Adequações*: Contagem de registros `total_adequações`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+- **Total de Adequações**: Contagem de registros `total_adequações`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
 - **Adequações Pendentes de Sistemas de Combate a Incêndio**: Contagem de registros pendentes nas colunas: "Bomba de Incêndio", "Extintor + suportes", "Hidrantes" - E a % sobre `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 

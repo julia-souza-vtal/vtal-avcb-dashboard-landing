@@ -19,7 +19,7 @@
 ### 🎴 Cards / KPIs Globais
 Formatados como `XX (XX,XX%)`:
 
-- **Total de Prédios**: Contagem de registros `total_predios_ativos`. Ícone no canto extremo esquerdo do card na cor  #FFD919
+- **Total de Prédios**: Contagem de registros `total_predios_ativos` - SEM a porcentagem . Ícone no canto extremo esquerdo do card na cor  #FFD919
 
 - **Total de Adequações**: Contagem de registros `total_adequações`. Ícone no canto extremo esquerdo do card na cor  #FFD919
 
@@ -63,14 +63,14 @@ Formatados como `XX (XX,XX%)`:
    - Ordenação em ordem **decrescente**.
 -->
 
-#### LINHA de gráficos 2 - Região 
-2. Adequações Pendentes por Regional
+#### LINHA de gráficos 1 - Região 
+1. Adequações Pendentes por Regional
     - Seletor suspenso que afeta APENAS os dados desse gráfico 2. Itens: Regional, UF, Município;
     - Gráfico de barras verticais com valor absoluto e o percentual; 
     - Contagem de prédios com as adequações pendentes(valor da célula "SIM") das colunas Elétrica, Bomba de incêndio,	Escada, Escada enclausurada, Extintor + suportes, FM200, Hidrantes, PCF, SDACI, SDAI, Sinalizações, Sistema de espuma, SPDA agregadas por regional (Coluna - itens NORDESTE, SUDESTE, CENTRO OESTE, SUL, NORTE);
    - Ordenação em ordem **decrescente**.
 
-#### LINHA de gráficos 3 - por Categoria
+#### LINHA de gráficos 2 - por Categoria
 <!-- | Categoria: Itens       
 | Sistemas de Combate a Incêndio :  Bombas de incêndio, Extintores, Mangueiras, Hidrantes, SPK, LGE, Agente Limpo |
 | Adequação Civil : Escada, Escada Enclausurada, PCF (porta corta-fogo)  |
@@ -79,25 +79,25 @@ Formatados como `XX (XX,XX%)`:
 | Abandono de Área e Emergência: Sinalizações, Iluminação de Emergência   
 -->
 
-3. Adequações Pendentes de Sistemas de Combate a Incêndio 
+2. Adequações Pendentes de Sistemas de Combate a Incêndio 
     - Gráfico de barras horizontais com valor absoluto e o percentual. 
     - Contagem de prédios com as adequações pendentes (valor da célula "SIM") das colunas Bomba de Incêndio, Extintor + suportes, Hidrantes
    - Ordenação em ordem **decrescente**.
 
-4. Adequações Pendentes de Adequação Civil
+3. Adequações Pendentes de Adequação Civil
     - Gráfico de barras horizontais com valor absoluto e o percentual. 
     - Contagem de prédios com as adequações pendentes (valor da célula "SIM") das colunas Escada, Escada Enclausurada, PCF (porta corta-fogo); 
    - Ordenação em ordem **decrescente**.
 
-5. Adequações Pendentes de Sistemas de Detecção e Alarme
+4. Adequações Pendentes de Sistemas de Detecção e Alarme
     - Gráfico de barras horizontais com valor absoluto e o percentual. 
     - Contagem de prédios com as adequações pendentes (valor da célula "SIM") das colunas SDAI, SDACI 
 
-6. Adequações Pendentes de Sistemas Elétricos e Aterramento
+5. Adequações Pendentes de Sistemas Elétricos e Aterramento
     - Gráfico de barras horizontais com valor absoluto e o percentual. 
     - Contagem de prédios com as adequações pendentes (valor da célula "SIM") das colunas Quadros Elétricos, SPDA
 
-7. Adequações Pendentes de Abandono de Área e Emergência
+6. Adequações Pendentes de Abandono de Área e Emergência
     - Gráfico de barras horizontais com valor absoluto e o percentual. 
     - Contagem de prédios com as adequações pendentes (valor da célula "SIM") das colunas Sinalizações, Iluminação de Emergência
 
@@ -116,3 +116,5 @@ De acordo com o tutorial do link https://webdesign.tutsplus.com/how-to-create-a-
 - **Campo de Busca**: Campo de pesquisa por texto aberto pelo nome do prédio no canto superior direito da área da tabela.
 
 - **Aparência**: Tabela com rolagem interna, sem paginação e sem textos na parte superior além do título e campo de busca.
+
+- **Valores monetários**: todos os valores monetários (coluna Custo (OG)) devem ter o ´R$´ na frente, conter o separador de milhar e a vírgula das casas decimais.
